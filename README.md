@@ -19,6 +19,12 @@ A database-driven web portal designed to streamline university cricket team mana
 
 ## 📸 Screenshots
 ![login](images/login.jpg)
+![home](images/home.jpg)
+![team](images/team.jpg)
+![player](images/player.jpg)
+![playerstats](images/playerstats.jpg)
+![matches](images/matches.jpg)
+![coaches](images/coaches.jpg)
 
 ## 🗂️ Entity Relationship Overview
 
