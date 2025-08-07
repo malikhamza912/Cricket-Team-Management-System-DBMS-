@@ -1,0 +1,247 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+}
+
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url('https://pbs.twimg.com/media/EtFAVOpXYAQq82a.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	background-size: 1300px 800px;
+	background-position: 10% 50%;
+}
+
+header 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+header h2
+{
+	color: white;
+	text-underline-offset: 13px;
+	text-decoration-line: underline;
+	text-decoration-color: rgb(0, 158, 96);
+	text-decoration-style: solid;
+	text-decoration-thickness: 5px;
+}
+
+.logo 
+{
+	font-size: 2em;
+	color: #fff;
+	user-select: none;
+}
+
+.navigation a 
+{
+	position: relative;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+	text-shadow: 3px 3px 5px black;
+}
+
+.navigation a::after 
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+header .btnLogin-popup 
+{
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: 2px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: background-color 0.5s;
+}
+
+header .navigation .btnLogin-popup:hover {
+	background-color: rgb(0, 158, 96);
+}
+
+.navigation a:hover::after 
+{
+	transform-origin: left;
+	transform: scaleX(1);
+	background-color: black;
+}
+
+.wrapper
+{
+	position: fixed;
+	width: 400px;
+	height: 300px;
+	background: transparent;
+	border: 2px rgba(255,255,255,.5);
+	border-radius: 6px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transform: scale(0);
+	transition: transform .5s ease, height .2s ease;
+}
+
+p.error-message 
+{
+	position: fixed;
+    color: darkred;
+    font-weight: bold;
+	top: 65%;
+}
+
+.wrapper.active-popup
+{
+	transform: scale(1);
+}
+
+.wrapper .form-box
+{
+	position: fixed;
+	width: 100%;
+	padding: 40px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.form-box h2
+{
+	position: fixed;
+	font-size: 35px;
+	color: white;
+	left: 38%;
+	top: 3%;
+	text-decoration: underline;
+}
+
+.input-box
+{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-bottom: 2px solid greenyellow;
+	border-bottom-width: 1px;
+	margin: 30px 0;
+}
+
+.input-box label
+{
+	position: absolute;
+	top: 30%;
+	left: 1px;
+	transform: translateY(-50%);
+	font-size: 1.1em;
+	color: white;
+	font-style: bold;
+	font-weight: 500;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.input-box input
+{
+	width: 100%;
+	height: 80%;
+	background: transparent;
+	border: 2px white;
+	outline: none;
+	font-size: 1em;
+	color: white;
+	font-weight: 600;
+}
+	
+.input-box .icon
+{
+	position: relative;
+	left: 300px;
+	top: 5px;
+	font-size: 1.2em;
+	color: white;
+	line-height: 57px;
+}
+
+.icon-close
+{
+	position: relative;
+	right: 200px;
+	left: 350px;
+	top: 5px;
+	font-size: 1.2em;
+	color: rgb(0, 158, 96);
+	line-height: 57px;
+}
+
+.btn
+{
+	width: 100%;
+	height: 45px;
+	background: white;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: black;
+	font-weight: 500;
+}
+
+.btn:hover 
+{
+	background-color: rgb(0, 158, 96);;
+	color: white;
+}
