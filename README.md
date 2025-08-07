@@ -18,7 +18,7 @@ A database-driven web portal designed to streamline university cricket team mana
 - **Database Management:** phpMyAdmin via XAMPP
 
 ## 📸 Screenshots
-![login](C:\Users\Hamza\Documents\GitHub\Cricket-Team-Management-System-DBMS-\images\login.jpg)
+![login](images/login.jpg)
 
 ## 🗂️ Entity Relationship Overview
 
